@@ -268,6 +268,7 @@ h2{
         height: 300px;
         width: 345px;
         margin-left: 2%;
+        margin-top: 10px;
     }
 
     .articles, .photos{
@@ -293,10 +294,6 @@ h2{
         margin-top: 10%;
     }
 
-/* ---------------------------
-    partners section styles 
-    ------------------------*/
-
     .partners{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
@@ -304,7 +301,7 @@ h2{
     .partner img{
         padding-bottom: 0;
     }
-    footer{
+    .footer{
         width: 100%;
         text-align: center;
     }
@@ -363,8 +360,8 @@ h2{
     .partner img{
         padding-bottom: 0;
     }
-    footer{
-        width: 100%;
+    .footer{
+        text-align: center;
         text-align: center;
     }
 }
