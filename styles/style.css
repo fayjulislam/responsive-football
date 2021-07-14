@@ -152,10 +152,63 @@ h2{
     margin-right: 80px;
 }
 
+/*------------------------------
+   photo album section styles 
+   ---------------------------*/
+.photo-album{
+   margin-bottom: 100px;
+}
+#photo-album{
+    color: black;
+    text-align: center;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    text-align: center;
+    padding: 2%;
+}
+.photo{
+    overflow: hidden;
+    position: relative;
+}
+.photo img{
+    width: 255px;
+    height: 224px;
+}
+.photo img:hover{
+    transition: 2s ease-in-out;
+    transform: scale(1.5);
+}
+
 /* --------------------------
      footer section styles 
      ----------------------*/
 
+     /* our parters section styles */
+.our-partners{
+    background-color: rgb(230, 230, 230);
+}
+#our-partners{
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.partner img{
+    width: 142px;
+    height: 142px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+}
+
+     /* footer logo, social icons and copyright section styles */
 .footer{
     width: 483.87px;
     margin: 0 auto;
