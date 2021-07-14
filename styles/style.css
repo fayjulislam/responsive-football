@@ -5,8 +5,8 @@
      common styles and utilities  
      ---------------------------*/
 body{
- margin: 0;
- font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     background-color: #2D25A0;
