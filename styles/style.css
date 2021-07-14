@@ -196,16 +196,21 @@ h2{
     text-align: center;
     padding-top: 50px;
 }
-.partners{
+/* .partners{
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+} */
+.partners{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 60px;
+    text-align: center;
 }
 .partner img{
     width: 142px;
     height: 142px;
     padding-bottom: 60px;
-    padding-right: 50px;
 }
 
      /* footer logo, social icons and copyright section styles */
@@ -266,6 +271,7 @@ h2{
     }
 
     .articles, .photos{
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         margin-left: 4%;
     }
@@ -282,19 +288,83 @@ h2{
     }
     .hightlight-image{
         height: 240px;
-        width: 335px;
+        width: 100%;
         margin-left: 3%;
         margin-top: 10%;
     }
+
+/* ---------------------------
+    partners section styles 
+    ------------------------*/
+
     .partners{
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
     .partner img{
         padding-bottom: 0;
     }
     footer{
         width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+    }
+    #link-button{
+        margin-left: 0;
+    }
+    .header-banner{
+        
+    }
+    .half-width{
+       width: 100%;
+    }
+    .banner-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .banner-image{
+        height: 300px;
+        width: 345px;
+    }
+    .articles, .photos{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4%;
+    }
+    .hightlight-left{
+        margin: 0;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 10%;
+    }
+    .hightlight-image{
+        height: 240px;
+        width: 100%;
+        padding-right: 5%;
+        margin-top: 20%;
+    }
+    .partners{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partner img{
+        padding-bottom: 0;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
     }
 }
